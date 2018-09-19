@@ -30,72 +30,133 @@
 }
 
 /* this positions my name, changes color, and makes it absolute*/
+
 .name {
     color: orange;
     width: 30%;
-    font-size: 40px;
-    position: absolute;
-    top: 500px;
-    right: 20px;
+    font-size: 300%;
+    position: relative;
+    bottom: 400px;
+    left: 70%;
     /*text-shadow: 0px -2px 1px #1113; */
 }
 
-/* this makes the buttons horizontal, and creates padding and margin*/
-.button {
-    font-size: 120%;
-    margin: 3px;
-    padding: 15px;
-    display: inline-block;
+/* this is the navigation bar, here I change color, margin and padding, hide overflow--the bullets */
+
+ul.button {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #1111;
+    z-index: 1;
 }
-/* this changes the menu color on hover*/
-.button a:hover {
-    color: #ccc;
+
+ul.button li {
+    float: center;
 }
+
+/* Links inside the navbar */
+
+ul.button li a {
+    display: block;
+    color: darkslategray;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+ul.button li a:hover:not(.active) {
+    background-color: orange;
+}
+
+/*I use below code to make the menu responsive*/
+
+@media screen and (max-width: 600px) {
+    ul.button li.right,
+    ul.button li {
+        float: none;
+    }
+}
+
+/* Change background on mouse-over */
+
 /* This sets the font, style, underline, color, and makes margins/padding for the h2 headlines*/
+
 h2 {
     font-family: Georgia, sans-serif;
     text-decoration: underline;
     font-style: normal;
     color: grey;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: black;
     margin: 2% 25%;
     padding: 3%;
 }
+
 /* this makes a border box around the text and sets the font, font size, ledding, and color*/
+
 p {
-    font-family: Georgia, sans-serif;
+    font-family: Verdana, sans-serif;
     font-style: normal;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: black;
     margin: 2% 20%;
-    line-height: 27px;
+    line-height: 40px;
     padding: 5%;
     border: width style color;
     border: 2px solid #ffa64d;
 }
+
 /* this makes a border box around the text and sets the font, font size, ledding, and color*/
+
 .exercises {
-    font-family: Georgia, sans-serif;
+    font-family: Verdana, sans-serif;
     font-weight: 600;
     font-size: 1.1em;
     color: black;
     margin: 2% 20%;
-    line-height: 32px;
+    line-height: 43px;
     padding: 5% 15%;
     border: width style color;
     border: 2px solid #ffa64d;
 }
+
+/* sets color for link before being visited*/
+
+a:link {
+    color: darkgray;
+}
+
+/* sets color for link after being visited*/
+
+a:visited {
+    color: darkgray;
+}
+
+/* sets color for link during hover*/
+
+a:hover {
+    color: deepskyblue;
+
+}
+
+/* sets color for link during being clicked*/
+
+a:active {
+    color: darkslateblue;
+}
+
 /* this makes a border box around the text and sets the font, font size, ledding, and color*/
+
 .projects {
     align-content: center;
-
-    font-family: Georgia, sans-serif;
+    font-family: Verdana, sans-serif;
     font-weight: 600;
     font-size: 1.1em;
     color: black;
     margin: 2% 20%;
-    line-height: 32px;
+    line-height: 43px;
     padding: 5% 15%;
     border: width style color;
     border: 2px solid #ffa64d;
