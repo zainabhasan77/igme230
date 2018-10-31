@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: HindFont;
+    src: url(Hind-Regular.ttf);
+
+}
+
+img {
+    border: 0px solid grey;
+    border-radius: 20px;
+}
+
+div.gallery:hover {
+
+    transform: scale(1.1);
+}
+
+@supports (display: grid) {
+    .warning {
+        display: none;
+    }
+}
+
+body {
+    background: ;
+    background-size: 100%;
+}
+
+/* The navigation bar */
+
+.navbar {
+    font-family: HindFont;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    /* Set the navbar to fixed position */
+    top: 50px;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    right: 50px;
+}
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: right;
+    display: block;
+    right: 50px;
+    color: grey;
+    text-align: center;
+    margin-right: 10px;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+/* Change background on mouse-over */
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+/* Main content */
+
+.main {
+    margin-top: 100px;
+    /* Add a top margin to avoid content overlay */
+}
+
+
+h1 {
+    font-family: raleway;
+    color: black;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50px;
+    left: 50px
+}
+
+h2 {
+    color: dodgerblue;
+    font-size: 1.4em;
+    padding: 150px;
+    line-height: 1.4em;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: 400;
+
+}
+
+h5 {
+    color: grey;
+    font-size: 1em;
+
+}
+
+
+p {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-size: .93em;
+    color: black;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 1rem;
+    max-width: 95vw;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container1 {
+    margin: auto;
+
+}
+
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+footer {
+    font-size: 15px;
+
+}
+
+@supports (display:grid) {
+    .warning {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        right: 0px;
+
+    }
+
+    .navbar {
+        right: 0px;
+
+    }
+
+    h2 {
+        font-size: .9em;
+        padding: 150px 0px 40px 0px;
+        line-height: 1.5em;
+        margin: 20px;
+    }
+
+    h1 {
+        font-family: raleway;
+        color: black;
+        font-size: 1em;
+        position: absolute;
+        top: 50px;
+        left: 50px
+    }
+}
+
+footer {
+    color: ;
+    font-size: 1em;
+}
+
+/* Change the link color to #111 (black) on hover */
