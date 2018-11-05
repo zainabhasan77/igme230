@@ -5,7 +5,6 @@
 @font-face {
     font-family: HindFont;
     src: url(Hind-Regular.ttf);
-
 }
 
 img {
@@ -25,11 +24,8 @@ div.gallery:hover {
 }
 
 body {
-    background: ;
     background-size: 100%;
 }
-
-/* The navigation bar */
 
 .navbar {
     font-family: HindFont;
@@ -37,15 +33,10 @@ body {
     overflow: hidden;
     background-color: transparent;
     position: absolute;
-    /* Set the navbar to fixed position */
     top: 50px;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
     right: 50px;
 }
-
-/* Links inside the navbar */
 
 .navbar a {
     float: right;
@@ -58,7 +49,6 @@ body {
     text-decoration: none;
 }
 
-/* Change background on mouse-over */
 
 .navbar a:hover {
     color: black;
@@ -68,11 +58,9 @@ body {
     display: none;
 }
 
-/* Main content */
 
 .main {
     margin-top: 100px;
-    /* Add a top margin to avoid content overlay */
 }
 
 
@@ -192,7 +180,7 @@ footer {
     h1 {
         font-family: raleway;
         color: black;
-        font-size: 1em;
+        font-size: 1.2em;
         position: absolute;
         top: 50px;
         left: 50px
@@ -204,5 +192,3 @@ footer {
     font-size: 1em;
     text-align: center;
 }
-
-/* Change the link color to #111 (black) on hover */

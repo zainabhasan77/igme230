@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -8,14 +8,18 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
+
+<body>
+
     <div class="navbar" id="nav">
         <a href="about.html">About</a>
         <a href="resume.html">Resume</a>
-        <a href="main.html">Work</a><a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
+        <a href="main.html">Work</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 
     </div>
+
     <script>
         function myFunction() {
             var x = document.getElementById("nav");
@@ -23,18 +27,14 @@
                 x.className += " responsive";
             } else {
                 x.className = "navbar";
-
             }
-
             console.log("test");
         }
     </script>
-</head>
 
-<body>
-    <div> <img class="img1" src="madness1.png">
-        <img class="img2" src="madness2.png">
-        <img class="img3" src="madness3.png">
+    <div><img class="img1" src="madness1.png" alt="Illustration 1">
+        <img class="img2" src="madness2.png" alt="Illustration 2">
+        <img class="img3" src="madness3.png" alt="Illustration 3">
     </div>
 
     <h1>Turtles All The Way Down</h1>
@@ -49,7 +49,9 @@
     <p>Sketching, Frame by Frame Animation
     </p>
 
-
+    <footer>
+        <p> @ Zainab Hasan 2018</p>
+    </footer>
 
 </body>
     

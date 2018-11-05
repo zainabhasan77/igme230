@@ -1,200 +1,201 @@
- /* Links inside the navbar */
+.navbar {
+    font-size: 18px;
+    overflow: hidden;
+    background-color: transparent;
+    top: 50px;
+    width: 100%;
+    right: 50px;
+}
 
- .navbar {
-     font-size: 18px;
-     overflow: hidden;
-     background-color: transparent;
+.navbar a {
+    float: right;
+    display: block;
+    right: 50px;
+    color: grey;
+    text-align: center;
+    margin-right: 10px;
+    padding: 14px 10px;
+    text-decoration: none;
+}
 
-     /* Set the navbar to fixed position */
-     top: 50px;
-     /* Position the navbar at the top of the page */
-     width: 100%;
-     /* Full width */
-     right: 50px;
- }
+.navbar a:hover {
+    color: black;
+}
 
- .navbar a {
-     float: right;
-     display: block;
-     right: 50px;
-     color: grey;
-     text-align: center;
-     margin-right: 10px;
-     padding: 14px 10px;
-     text-decoration: none;
- }
+.navbar .icon {
+    display: none;
+}
 
- /* Change background on mouse-over */
+img {
+    display: block;
+    margin: auto;
+}
 
- .navbar a:hover {
-     color: black;
- }
+.img2 {
+    display: block;
+    margin: auto;
 
- .navbar .icon {
-     display: none;
- }
+}
 
- img {
-     display: block;
-     margin: auto;
- }
+.img3 {
+    display: block;
+    margin: auto;
+}
 
- .img2 {
-     display: block;
-     margin: auto;
+.img4 {
+    height: 300px;
+}
 
- }
+.img5 {
+    height: 600px;
+}
 
- .img3 {
-     display: block;
-     margin: auto;
- }
-
- .img4 {}
-
-
- p {
-     font-family: Georgia, sans-serif;
-     font-style: normal;
-     font-size: 1em;
-     color: black;
-     line-height: 1.5em;
-     padding: 20px;
-     margin: 0px 500px 0px 200px;
-     text-align: left;
-     z-index: 1;
- }
-
- h1 {
-     color: black;
-     font-family: Verdana, sans-serif;
-     font-size: 1.6em;
-     font-weight: 500;
-     padding: 10px;
-     margin: 0px 500px 0px 200px;
-     top: 1300px;
-     margin-top: 60px;
- }
-
- h2 {
-     color: dodgerblue;
-     font-family: Verdana, sans-serif;
-     font-size: 1.2em;
-     font-weight: 500;
-     padding: 10px;
-     margin: 0px 500px 0px 200px;
- }
+.img6 {
+    height: 600px;
+}
 
 
+p {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    color: black;
+    line-height: 1.5em;
+    padding: 20px;
+    margin: 0px 500px 0px 200px;
+    text-align: left;
+    z-index: 1;
+}
+
+h1 {
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 500px 0px 200px;
+    top: 1300px;
+    margin-top: 60px;
+}
+
+h2 {
+    color: dodgerblue;
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 500px 0px 200px;
+}
 
 
- @media screen and (max-width: 500px) {
-
-     .navbar a {
-         display: none;
-     }
-     .navbar a.icon {
-         float: right;
-         display: block;
-     }
-
-     .navbar.responsive {}
-
-     .navbar.responsive a.icon {
-         position: absolute;
-         right: 0;
-         top: 0;
-     }
-
-     .navbar.responsive a {
-         float: none;
-         display: block;
-         right: 0px;
-
-     }
-
-     .navbar {
-         right: 0px;
-
-     }
 
 
-     .img4 {
-         padding: 10px;
-         margin: 0 auto;
-         top: 0px;
-         width: 50%;
-         height: 50%;
+@media screen and (max-width: 500px) {
 
-     }
+    .navbar a {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
 
-     .img1 {
-         padding: 10px;
-         margin: 0 auto;
-         width: 100%;
-     }
+    .navbar.responsive {}
 
-     .img2 {
-         padding: 10px;
-         margin: 0 auto;
-         width: 100%;
-     }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
-     .img3 {
-         padding: 10px;
-         margin: 0 auto;
-         width: 100%;
-     }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        right: 0px;
 
-     .img5 {
-         padding: 10px;
-         margin: 0 auto;
-         width: 100%;
-         height: 100%;
+    }
 
-     }
+    .navbar {
+        right: 0px;
 
-     .img6 {
-         padding: 10px;
-         margin: 0 auto;
-         width: 90%;
-         height: 90%;
+    }
 
-     }
-     p {
-         font-family: Georgia, sans-serif;
-         font-style: normal;
-         font-size: .9em;
-         color: black;
-         line-height: 1.5em;
-         padding: 20px;
-         margin: 0 50px 0px 30px;
-         text-align: left;
-         top: 2000px;
-     }
-     h1 {
-         color: black;
-         font-family: Verdana, sans-serif;
-         font-size: 1.6em;
-         font-weight: 500;
-         padding: 10px;
-         margin: 0px auto 0px 30px;
-         top: 1300px;
-     }
 
-     h2 {
-         color: dodgerblue;
-         font-family: Verdana, sans-serif;
-         font-size: 1.2em;
-         font-weight: 500;
-         padding: 10px;
-         margin: 0px auto 0px 30px;
-     }
- }
+    .img4 {
+        padding: 10px;
+        margin: 0 auto;
+        top: 0px;
+        width: 50%;
+        height: 50%;
 
- footer {
-     color: grey;
-     font-size: 1em;
- }
+    }
 
- /* max-width 1000 */
+    .img1 {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img2 {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img3 {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .img5 {
+        padding: 10px;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .img6 {
+        padding: 10px;
+        margin: 0 auto;
+        width: 90%;
+        height: 90%;
+
+    }
+    p {
+        font-family: Georgia, sans-serif;
+        font-style: normal;
+        font-size: .9em;
+        color: black;
+        line-height: 1.5em;
+        padding: 20px;
+        margin: 0 50px 0px 30px;
+        text-align: left;
+        top: 2000px;
+    }
+    h1 {
+        color: black;
+        font-family: Verdana, sans-serif;
+        font-size: 1.6em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 30px;
+        top: 1300px;
+    }
+
+    h2 {
+        color: dodgerblue;
+        font-family: Verdana, sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 30px;
+    }
+}
+
+footer {
+    color: grey;
+    font-size: .8em;
+    text-align: center;
+}
