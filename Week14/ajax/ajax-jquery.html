@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://127.0.0.1:53452/Week14/ajax/ajax-query.html -->
+<html data-brackets-id="44" class="gr__127_0_0_1"><head data-brackets-id="45">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta data-brackets-id="47" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta data-brackets-id="48" name="viewport" content="width=device-width">
+    <link data-brackets-id="49" href="./ajax-jquery_files/css" rel="stylesheet">
+    <title data-brackets-id="50">Initial AJAX File</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <style data-brackets-id="51">
+        html,
+        pre {
+            font-family: sans-serif;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            width: 800px;
+            background-color: #ccc;
+            border-radius: 1rem;
+            height: 90vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #selectedverse {
+            width: 400px;
+            margin: 1rem;
+            line-height: 1.5;
+            letter-spacing: 0.05rem;
+            padding: 1rem;
+            background-color: white;
+        }
+
+        label {
+            width: 200px;
+            margin-right: 33px;
+        }
+
+        select {
+            width: 350px;
+            padding: 5px;
+        }
+
+        .author {
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+    </style>
+
+</head>
+
+<body data-brackets-id="52" data-gr-c-s-loaded="true">
+    <div data-brackets-id="53" id="wrapper">
+        <h1 data-brackets-id="54">AJAX Example</h1>
+
+        <h2 data-brackets-id="55">In Memory of William B. Yeats (Third Stanza)<br data-brackets-id="56">
+            <span data-brackets-id="57" class="author">by W.H. Auden (1907-1973)</span></h2>
+
+        <form data-brackets-id="58">
+            <label data-brackets-id="59" for="verse-choose">Choose a verse</label>
+            <select data-brackets-id="60" id="verse-choose" name="verse-choose">
+                <option data-brackets-id="61" value="verse1-2.txt">Verse 1-2</option>
+                <option data-brackets-id="62" value="verse3-4.txt">Verse 3-4</option>
+                <option data-brackets-id="63" value="verse5-6.txt">Verse 5-6</option>
+            </select>
+        </form>
+
+
+        <div data-brackets-id="64" id="selectedverse">
+            <p>Earth, receive an honoured guest:<br> William Yeats is laid to rest.<br> Let the Irish vessel lie<br> Emptied of its poetry.<br></p>
+
+            <p>In the nightmare of the dark<br> All the dogs of Europe bark,<br> And the living nations wait,<br> Each sequestered in its hate;</p>
+
+        </div>
+
+    </div>
+    <script data-brackets-id="65">
+        'use strict';
+
+        let verse = ("verse1-2.txt") // sets default verse element
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verse); // retrieves only default element
+
+
+        $("#verse-choose").change(function() {
+            verse = $(this).val();
+            $("#selectedverse").load(verse);
+        });
+    </script>
+
+
+    <div class="__brackets-ld-highlight" style="left: 308px; top: 185px; width: 350px; height: 18px; z-index: 2000000; margin: 0px; padding: 0px; position: absolute; pointer-events: none; box-shadow: rgb(255, 255, 255) 0px 0px 1px; box-sizing: border-box; border-width: 0px; border-style: none; border-color: rgba(21, 165, 255, 0.85); transform: none; transform-origin: 175px 9px 0px; background-color: rgba(0, 162, 255, 0); opacity: 0.6;">
+        <div style="background-color: rgba(21, 165, 255, 0.58); height: 0px; width: 350px; left: 0px; top: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="background-color: rgba(21, 165, 255, 0.58); width: 0px; height: 18px; top: 0px; right: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="background-color: rgba(21, 165, 255, 0.58); height: 0px; width: 350px; left: 0px; bottom: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="background-color: rgba(21, 165, 255, 0.58); width: 0px; height: 18px; top: 0px; left: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="border-width: 1px; border-style: dashed; border-color: rgba(0, 162, 255, 0.5); height: 0px; width: 350px; left: 0px; top: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="border-width: 1px; border-style: dashed; border-color: rgba(0, 162, 255, 0.5); width: 0px; height: 18px; top: 0px; right: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="border-width: 1px; border-style: dashed; border-color: rgba(0, 162, 255, 0.5); height: 0px; width: 350px; left: 0px; bottom: 0px; position: absolute; display: none; transform: none;"></div>
+        <div style="border-width: 1px; border-style: dashed; border-color: rgba(0, 162, 255, 0.5); width: 0px; height: 18px; top: 0px; left: 0px; position: absolute; display: none; transform: none;"></div>
+    </div>
+</body></html>
