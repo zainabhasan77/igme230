@@ -15,12 +15,12 @@ $('input[type=radio][name=article]').change(function () {
             selection = $(this).val();
             $("article").load(selection);
 
-
+});
 
 
 
 let clicks = 0;
-        $("#clickme").click(function () {
+            $("#clickme").click(function () {
                 clicks++;
                 $("#count").html(clicks);
-        })
+            })
