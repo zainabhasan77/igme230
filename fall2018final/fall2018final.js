@@ -19,8 +19,8 @@ $('input[type=radio][name=article]').change(function () {
 
 
 
-            let clicks = 0;
-            $("#clickme").click(function () {
+let clicks = 0;
+        $("#clickme").click(function () {
                 clicks++;
                 $("#count").html(clicks);
-            })
+        })
