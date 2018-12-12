@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Zainab Hasan Portfolio</title>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navbar" id="nav">
+        <a href="documentation.html">Documentation</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="main.html">Work</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+            console.log("test");
+        }
+    </script>
+    
+
+    <h1>
+        <b>Zainab Hasan</b>
+    </h1>
+
+    <h2 class="headline">
+        <span class="letters">Hi, I'm Zainab. I'm a designer striving to create the best user experiences for humans and turtles</span>
+    </h2>
+
+    <main>
+        <div class="container1">
+            <div class="gallery"><a href="dmv.html"><img src="dmvpreview.png" alt="DMV Project"></a></div>
+            <h5>DMV Project: UX and UI</h5>
+
+
+            <div class="gallery"><a href="reporter.html"><img src="reporterpreview.png" alt="Reporter Project"></a></div>
+            <h5>Reporter Project: UX and UI</h5>
+        </div>
+
+        <div class="container1">
+            <div class="gallery"><a href="drawing.html"><img src="drawingpreview.png" alt="Drawing Project"></a></div>
+            <h5>Illustration: Frame by Frame Still Frames</h5>
+
+            <div class="gallery"><a href="nmd.html"><img src="nmdpreview.png" alt="Illustration Project"></a></div>
+            <h5>NMD Illustration: What is NMD?</h5>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>@ Zainab Hasan 2018</p>
+    </footer>
+
+    <script src="interactions.js"></script>
+
+</body>
+
+</html>

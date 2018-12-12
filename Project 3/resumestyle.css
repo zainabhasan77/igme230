@@ -1,0 +1,210 @@
+/*Uploading font*/
+@font-face {
+    font-family: 'HindFont';
+    src: url(Hind-Regular.ttf);
+}
+
+/*styles the navigation bar, sets font, font-size, placement and width*/
+.navbar {
+    font-family: HindFont;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: transparent;
+    top: 50px;
+    width: 100%;
+    right: 50px;
+}
+
+/*sets style for each navigation link*/
+.navbar a {
+    float: right;
+    display: block;
+    right: 50px;
+    color: grey;
+    text-align: center;
+    margin-right: 10px;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+/*sets style for when mouse is hovered over a button*/
+.navbar a:hover {
+    color: black;
+}
+
+/*hides hamburger menu on default*/
+.navbar .icon {
+    display: none;
+}
+
+/*styling images by class name. Sets display and size*/
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.img2 {
+    display: block;
+    margin: auto;
+
+}
+
+.img3 {
+    display: block;
+    margin: auto;
+}
+
+.img4 {
+    height: 300px;
+}
+
+.img5 {
+    height: 600px;
+}
+
+.img6 {
+    height: 600px;
+}
+
+/*sets style for paragraphs on all case studies*/
+p {
+    font-family: Georgia, sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    color: black;
+    line-height: 1.5em;
+    padding: 15px;
+    margin: 0px 50px 0px 20px;
+    text-align: left;
+    z-index: 1;
+}
+
+
+/*sets style for headline 1*/
+h1 {
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-size: 1.6em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 50px 0px 20px;
+    margin-top: 20px;
+}
+
+/*sets style for headline 2*/
+h2 {
+    color: dodgerblue;
+    font-family: Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px;
+    margin: 0px 50px 0px 20px;
+}
+
+
+/*changes whatever css is included in the brackets for the screen with a max width of 1100px*/
+@media screen and (max-width: 1100px) {
+
+    p {
+        font-family: Georgia, sans-serif;
+        font-style: normal;
+        font-size: 1em;
+        color: black;
+        line-height: 1.5em;
+        padding: 20px;
+        margin: 0 50px 0px 20px;
+        text-align: left;
+    }
+
+    h1 {
+        color: black;
+        font-family: Verdana, sans-serif;
+        font-size: 1.6em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 20px;
+    }
+
+    h2 {
+        color: dodgerblue;
+        font-family: Verdana, sans-serif;
+        font-size: 1.2em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 20px;
+    }
+
+}
+
+/*changes whatever css is included in the brackets for the screen with a max width of 500px which is iphone 5*/
+
+@media screen and (max-width: 500px) {
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {}
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        right: 0px;
+
+    }
+
+    .navbar {
+        right: 0px;
+
+    }
+
+    p {
+        font-family: Georgia, sans-serif;
+        font-style: normal;
+        font-size: .6em;
+        color: black;
+        line-height: 1.5em;
+        padding: 10px;
+        margin: 0 50px 0px 30px;
+        text-align: left;
+    }
+
+    h1 {
+        color: black;
+        font-family: Verdana, sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 30px;
+        top: 1300px;
+
+    }
+
+    h2 {
+        color: dodgerblue;
+        font-family: Verdana, sans-serif;
+        font-size: .7em;
+        font-weight: 500;
+        padding: 10px;
+        margin: 0px auto 0px 30px;
+    }
+}
+
+/* sets style for footer. centers it, assigns color and size*/
+footer {
+    color: grey;
+    font-size: .8em;
+    text-align: center;
+}

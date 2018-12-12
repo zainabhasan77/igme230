@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Reporter</title>
+    <link rel="stylesheet" href="casestyle.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="navbar" id="nav">
+        <a href="documentation.html">Documentation</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="main.html">Work</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+            console.log("test");
+        }
+
+    </script>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="madness1.png" style="width:100%" alt="Photo of madness" class="image1">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="madness2.png" style="width:100%" alt="Photo of madness 2">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="madness3.png" style="width:100%" alt="Photo of madness 3">
+        </div>
+    </div>
+    <br>
+
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <h1>Turtles All The Way Down</h1>
+
+
+    <h2>Objective</h2>
+    <p>“The thing about a spiral is, if you follow it inward, it never actually ends. It just keeps tightening, infinitely.” -John Green
+        <br><br>
+        Recently, I read a book called "Turtles All the Way Down," this book allowed me to view the world from a different perspective. It speaks about mental illness, and how certain things in life are unmanageable. Yet, we get to choose how to react to situations, because life is a story told about you. Inspired by the above quote and Muhammed Salah's illustration style, I created a frame by frame animation to communicate my interpretation.
+    </p>
+
+    <h2>Skills</h2>
+    <p>Sketching, Frame by Frame Animation
+    </p>
+
+    <h2>Skills</h2>
+    <p>Sketching, Frame by Frame Animation
+    </p>
+
+    <footer>
+        <p> @ Zainab Hasan 2018</p>
+    </footer>
+
+
+    <script src="interactions.js"></script>
+
+</body>
+
+
+
+</html>
